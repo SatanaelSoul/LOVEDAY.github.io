@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>A Lonely Night</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./public/css/haniii.css">
+
+</head>
+<body>
+<!-- THE GLOWY TEXT -->
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">>
+  <p class="logo-1"> was it sunny when we met?</p>
+    <button class="invisible-button"id="inviz"></button>
+
+      
+<!-- THE  GLOWY TEXT -->
+
+
+
+
+<!-- Volume control for all sounds -->
+<div id="volume-control" style="position: absolute; top: 10px; left: 10px; z-index: 1000;">
+  <label for="volume">Volume</label>
+  <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+</div>
+
+
+
+  <audio id="rainSound">
+    <source src="public/sound/raining.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="bgMusic">
+    <source src="public/sound/introfallin.mp3" type="audio/mp3">
+  </audio>
+  <audio id="theDrop">
+    <source src="public/sound/fallinlove.mp3" type="audio/mp3">
+  </audio>
+
+
+<!-- partial:index.partial.html -->
+<!-- check the Comments for more info -->
+
+<body class="back-row-toggle splat-toggle">
+  <div class="rain front-row"></div>
+  <div class="rain back-row"></div>
+  <div class="toggles">
+  </div>
+</body>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./public/js/haniii.js"></script>
+  <!-- <script  src="./public/js/haniii2.js"></script> -->
+
+</body>
+</html>

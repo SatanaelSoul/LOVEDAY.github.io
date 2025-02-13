@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOVE DAY</title>
+    <link rel="stylesheet" href="./public/css/hanitools.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <!-- Main Menu with multiple action buttons -->
+      <div class="main-menu">
+        <button class="action-button" id="loveTime">Our Love Timer</button>
+        <button class="action-button" id="achievements">LOVE Milestones!</button>
+        <button class="action-button" id="lucky_but">Feeling Lucky?</button>
+        <button class="action-button" id ="restart_but" onclick="goBack()">Restart?</button>
+
+        <!-- You can add more buttons here, and the layout will adjust automatically -->
+      </div>
+      <div class="container" id="chiki">
+        <iframe width="315" height="560" src="https://www.youtube.com/embed/8_niEFxCPDU" title="drip chicken #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+
+      <div class="container" id="imigi">
+
+        <img src="./public/images/miss.jpg" alt="Hani sent this first" width="500" height="500">
+
+      </div>
+      <div class="container" id="imigi2">
+
+        <img src="./public/images/hmm.jpg" alt="Hani not forgetting something?" width="500" height="500">
+
+      </div>
+
+      <div class="container" id="imigi3">
+
+        <img src="./public/images/dwn.gif" alt=";p?" width="500" height="500">
+
+      </div>
+
+
+
+        <!-- Container for the 2-column list, initially hidden -->
+  <div class="list-container" id="listContainer">
+    <ul id="list1">
+      <li>First Date!</li>
+      <li>First video</li>
+      <li>First Birthday Together</li>
+      <li>First Valentine's Gift</li>
+    </ul>
+    <ul id="list2">
+      <li>February 27,2024</li>
+      <li><a href="https://www.youtube.com/watch?v=PFv-_3pQpyk">WATCH HERE</a></li>
+      <li>2024 [No personal info cause website is public]</li>
+      <li><a href="https://satanaelsoul.github.io/val.github.io/">GO HERE</a></li>
+    </ul>
+  </div>
+
+
+
+
+
+      <!-- Timer Display -->
+      <div id="waitingMessage" class="waiting-message">Waiting for current time...</div>
+      <div id="timerDisplay" class="timer-display"></div>
+      <div id="timerDisplayOFF" class="timer-display"></div>
+    </div>
+    
+
+
+    <audio id="bgHaniTools">
+      <source src="public/sound/hanitools.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="splash">
+      <h1 class="fade-in" id ="splashText" > No I'm not giving you a choice hehe </h1>
+      <button class="splash" onclick = "clicks++;startEver();" type="button" id="ready_but"> </button>
+    </div>
+    
+      
+
+    <script 
+
+    src="./public/js/hanitools.js">
+
+  </script>
+  </body>
+</html>

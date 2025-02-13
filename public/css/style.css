@@ -1,0 +1,234 @@
+body {
+    background-color: rgb(255, 204, 228);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    z-index: 200;
+    color: cornflowerblue;
+    text-align: center;
+    line-height: 90vh;
+}
+
+#ready_but {
+    position: fixed;
+    text-align: center;
+    
+    margin: 0 0;
+    color: pink;
+    background-color: transparent;
+    height: 1 !important;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: px;
+
+    p {
+        margin: 0;
+        object-fit: contain;
+    }
+}
+
+
+.splash.display-none{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    z-index: -10;
+    color: cornflowerblue;
+    text-align: center;
+    line-height: 90vh;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+
+
+#no-button {
+    margin: 0 10px;
+    color: white;
+    background-color: red;
+    height: 40px !important;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+
+    p {
+        margin: 0;
+        object-fit: contain;
+    }
+}
+
+#yes-button {
+    margin: 0 10px;
+    color: white;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+    height: 40px;
+
+    p {
+        margin: 0;
+        object-fit: contain;
+    }
+}
+
+/* Make responsive for mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.message {
+    display: none;
+}
+.message2 {
+    display: none;
+}
+.banner-gif {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+
+    img {
+        width: auto;
+        height: 250px;
+    }
+}
+
+
+.heart {
+    position: absolute;
+    color: #d32f2f;
+    font-size: 24px;
+    animation: floatUp 8s ease-in-out infinite;
+}
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(-60vh) scale(0.5);
+        opacity: 1;
+    }
+    90% {
+        transform: translateY(-80vh) scale(0.3);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100vh) scale(0.1);
+        opacity: 0;
+     
+    }
+
+
+
+/* Full-width inputs */
+  input{[type=text], input[type=password] 
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    z-index: 200;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    z-index: 200;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  
+  /* Add padding to containers */
+  .container {
+    padding: 70px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+
+/* Path: /js/script.js */
