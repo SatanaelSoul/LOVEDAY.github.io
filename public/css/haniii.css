@@ -174,7 +174,7 @@ body.single-toggle .drop:nth-child(10) {
 
 :root {
   --shadow-color: #9ee4ff;
-  --shadow-color-light: white;
+  --shadow-color-light: rgb(56, 242, 255);
 }
 
 * {
